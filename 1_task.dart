@@ -7,6 +7,7 @@ void runAllTasks(){
   secondTask();
   thirdTask();
   fourthTask();
+  fifthTask();
 }
 
 void firstTask(){
@@ -60,5 +61,19 @@ void fourthTask(){
   String weather = temperature > 25 ? "Тепло" :
   temperature < 10 ? "Дуже холодно" : "Прохолодно";
 
-  print("Температура $temperature°C: $weather");
+  print("Температура ${temperature}°C: ${weather}");
+}
+
+void fifthTask(){
+  double score = 0;
+  int correctAnswers = 17;
+  int mistakes = 3;
+  int totalQuestions = 20;
+
+  score += correctAnswers * 10;
+  score -= mistakes * 5;
+  score *= 2;
+  score /= totalQuestions;
+
+  print('Загальна кількість балів: ${score}');
 }
