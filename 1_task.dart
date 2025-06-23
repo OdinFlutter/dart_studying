@@ -8,6 +8,7 @@ void runAllTasks(){
   thirdTask();
   fourthTask();
   fifthTask();
+  sixthTask();
 }
 
 void firstTask(){
@@ -76,4 +77,19 @@ void fifthTask(){
   score /= totalQuestions;
 
   print('Загальна кількість балів: ${score}');
+}
+
+void sixthTask(){
+  int examScore = 10;
+  if (examScore > 90){
+    print('Відмінно');
+  } else if (examScore >= 75){
+    print('Добре');
+  } else if (examScore >= 60){
+    print('Задовільно');
+  } else if (examScore < 20){
+    print('Повторити курс');
+  } else {
+    print('Не здано');
+  }
 }
