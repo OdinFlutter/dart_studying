@@ -13,6 +13,7 @@ void runAllTasks(){
   sixthTask();
   seventhTask();
   eighthTask();
+  ninthTask();
 }
 
 void firstTask(){
@@ -135,4 +136,17 @@ void eighthTask(){
     sum += i;
   }
   print(sum);
+}
+
+void ninthTask(){
+  int number = 10;
+  while (number > 0){
+    if (number % 2 == 0){
+      print('Парне число');
+    } else{
+      print('Непарне число');
+    }
+    print(number);
+    number --;
+  }
 }
