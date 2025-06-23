@@ -1,3 +1,5 @@
+// ignore_for_file: dead_code
+
 void main(){
   runAllTasks();
 }
@@ -9,6 +11,7 @@ void runAllTasks(){
   fourthTask();
   fifthTask();
   sixthTask();
+  seventhTask();
 }
 
 void firstTask(){
@@ -91,5 +94,32 @@ void sixthTask(){
     print('Повторити курс');
   } else {
     print('Не здано');
+  }
+}
+
+void seventhTask(){
+  int dayNumber = 8;
+  switch (dayNumber){
+    case 1:
+      print('Monday');
+      break;
+    case 2 :
+      print('Tuesday');
+      break;
+    case 3 :
+      print('Wednesday');
+      break;
+    case 4 :
+      print('Thursday');
+      break;
+    case 5 :
+      print('Friday. Time to drink');
+      break;
+    case 6 || 7 :
+      print('Weeekend 🎉');
+      break;
+    default:
+      print('Wrong day');
+      break;
   }
 }
