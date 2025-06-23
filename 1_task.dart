@@ -5,6 +5,7 @@ void main(){
 void runAllTasks(){
   firstTask();
   secondTask();
+  thirdTask();
 }
 
 void firstTask(){
@@ -28,14 +29,27 @@ void secondTask(){
   } else {
     print('${number} менше 50');
   }
+
   if (number < 100) {
     print('${number} менше 100');
   } else {
     print('${number} більше 100');
   }
+
   if (number % 5 == 0){
     print('${number} ділиться на 5 без залишку');
   } else{
     print('${number} не ділиться на 5 без залишку');
+  }
+}
+
+void thirdTask(){
+  bool hasMoney = true;
+  bool isStoreOpen = true;
+
+  if(hasMoney && isStoreOpen) {
+    print('Ви можете зробити покупку');
+  } else if (!hasMoney || !isStoreOpen){
+    print('Перевірте графік роботи або гроші');
   }
 }
