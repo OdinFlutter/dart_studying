@@ -6,6 +6,7 @@ void runAllTasks(){
   firstTask();
   secondTask();
   thirdTask();
+  fourthTask();
 }
 
 void firstTask(){
@@ -52,4 +53,12 @@ void thirdTask(){
   } else if (!hasMoney || !isStoreOpen){
     print('Перевірте графік роботи або гроші');
   }
+}
+
+void fourthTask(){
+  int temperature = 10;
+  String weather = temperature > 25 ? "Тепло" :
+  temperature < 10 ? "Дуже холодно" : "Прохолодно";
+
+  print("Температура $temperature°C: $weather");
 }
