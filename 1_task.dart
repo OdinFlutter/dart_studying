@@ -12,6 +12,7 @@ void runAllTasks(){
   fifthTask();
   sixthTask();
   seventhTask();
+  eighthTask();
 }
 
 void firstTask(){
@@ -122,4 +123,16 @@ void seventhTask(){
       print('Wrong day');
       break;
   }
+}
+
+void eighthTask(){
+  int sum = 0;
+  for (int i = 1; i <=10; i++){
+    // print(i);
+    if (i % 2 == 0){
+      print(i);
+    }
+    sum += i;
+  }
+  print(sum);
 }
